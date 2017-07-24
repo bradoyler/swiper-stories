@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper Stories demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" data-hash="story1" >
+              <div class="story">
+                  <h1>Story 1 headline</h1>
+                  <h3>Some kind of summary text...</h3>
+                  <button class="view-story" type="button" name="button">View Story 1</button>
+              </div>
+              <img src="https://lorempixel.com/375/667/nature/1" alt="">
+            </div>
+            <div class="swiper-slide" data-hash="story2" >
+              <div class="story">
+                  <h1>Story 2 headline</h1>
+                  <button class="view-story" type="button" name="button">View Story 2</button>
+              </div>
+              <img src="http://lorempixel.com/375/667/nature/2" alt="">
+            </div>
+            <div class="swiper-slide" data-hash="story3" >
+              <div class="story">
+                  <h1>Story 3 headline</h1>
+                  <button class="view-story" type="button" name="button">View Story 3</button>
+              </div>
+              <img src="https://lorempixel.com/375/667/nature/3" alt="">
+            </div>
+            <div class="swiper-slide" data-hash="story4" >
+              <div class="story">
+                  <h1>Story 4 headline</h1>
+                  <button class="view-story" type="button" name="button">View Story 4</button>
+              </div>
+              <img src="https://lorempixel.com/375/667/nature/4" alt="">
+            </div>
+            <div class="swiper-slide" data-hash="story5" >
+              <div class="story">
+                  <h1>Story 5 headline</h1>
+                  <input type="text" name="" value="">
+                  <button type="button" name="button">subscribe</button>
+              </div>
+              <img src="https://lorempixel.com/375/667/nature/5" alt="">
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <script src="dist/swiper-stories.bundle.js"></script>
+    <script type="text/javascript">
+      // '.swiper-container'
+      SwiperStories('.swiper-container', { effect: 'fade' })
+    </script>
+</body>
+</html>
