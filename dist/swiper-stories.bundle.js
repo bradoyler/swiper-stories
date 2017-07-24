@@ -80,13 +80,25 @@ var _modal2 = _interopRequireDefault(_modal);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// styles
+// eslint-disable-line no-unused-vars
 // require('swiper/dist/css/swiper.min.css')
 __webpack_require__(3);
 
 function init(selector, swiperOptions, options) {
-  // https://github.com/nolimits4web/Swiper/blob/master/dist/js/swiper.js#L26
-  var swiper = new _swiper2.default(selector, swiperOptions);
+  var defaults = {
+    paginationType: 'progress',
+    paginationClickable: false,
+    pagination: '.swiper-pagination',
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    spaceBetween: 30,
+    hashnav: true,
+    hashnavWatchState: true,
+    keyboardControl: true
+    // https://github.com/nolimits4web/Swiper/blob/master/dist/js/swiper.js#L26
+
+  };var opts = Object.assign(defaults, swiperOptions);
+  var swiper = new _swiper2.default(selector, opts); // eslint-disable-line no-unused-vars
 }
 
 // attach to window

@@ -12,7 +12,7 @@ SwiperStories('.swiper-container'[, SwiperOptions, Options ])
 ```
 
 ## Demo 
-http://bradoyler.github.io/swiper-stories/
+https://bradoyler.github.io/swiper-stories/index.html
 
 ## Run & modify demo locally
 ```
